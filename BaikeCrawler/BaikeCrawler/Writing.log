@@ -1,0 +1,27 @@
+Traceback (most recent call last):
+  File "/Users/choukichiou/Desktop/BaikeCrawler/BaikeCrawler/source/DB_TXT_PARSE.py", line 213, in read_current_txt_and_add_ranged_page
+    data.write(WikiFormatChanging(JSON['topic'], i, 0, linkandh2h3formatchange_advanced(JSON['detail_text'])))
+  File "/Users/choukichiou/Desktop/BaikeCrawler/BaikeCrawler/source/DB_TXT_PARSE.py", line 16, in linkandh2h3formatchange_advanced
+    text = link.sub(replace_link_advanced, text)
+  File "/Users/choukichiou/Desktop/BaikeCrawler/BaikeCrawler/source/DB_TXT_PARSE.py", line 42, in replace_link_advanced
+    result = find_topic_from_url_refinement(linkto_url)
+  File "/Users/choukichiou/Desktop/BaikeCrawler/BaikeCrawler/source/DB_TXT_PARSE.py", line 147, in find_topic_from_url_refinement
+    cur.execute(sql)
+  File "/Users/choukichiou/PycharmProjects/progs/venv/lib/python3.6/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/Users/choukichiou/PycharmProjects/progs/venv/lib/python3.6/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/Users/choukichiou/PycharmProjects/progs/venv/lib/python3.6/site-packages/pymysql/connections.py", line 893, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/choukichiou/PycharmProjects/progs/venv/lib/python3.6/site-packages/pymysql/connections.py", line 1103, in _read_query_result
+    result.read()
+  File "/Users/choukichiou/PycharmProjects/progs/venv/lib/python3.6/site-packages/pymysql/connections.py", line 1396, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/choukichiou/PycharmProjects/progs/venv/lib/python3.6/site-packages/pymysql/connections.py", line 1032, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "/Users/choukichiou/PycharmProjects/progs/venv/lib/python3.6/site-packages/pymysql/connections.py", line 1066, in _read_bytes
+    data = self._rfile.read(num_bytes)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+中药材（中国传统中医的地道药材）          314971
